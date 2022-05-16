@@ -4,7 +4,9 @@ import print from "./output.js";
 
 const dp = new DataProvider();
 
-const result = await dp.getNameWithYodaFilter(2);
+const result = await dp.getNameWithYodaFilter(1);
+
+console.log(result);
 
 
 /*

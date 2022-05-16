@@ -17,12 +17,12 @@ describe("swapiGetter", () => {
 
     jest.spyOn(Api, 'getPersonById').mockReturnValue({ name: "Luke Skywalker" });
 
-
     const yodaName = await provider.getNameWithYodaFilter(1);
 
     const expected = "Skywalker Luke";
 
 
     expect(yodaName).toBe(expected);
+
   });
 });
